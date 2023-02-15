@@ -11,33 +11,38 @@
 
 :root {
   --main-color: rgb(148, 2, 2);
-  --sub-color: #c58177;
-  --text-color: black;
+  --sub-color: #e770ce;
+  --text-color: rgb(51, 51, 51);
 }
 
 /* navbar */
 nav {
   width: 100%;
   height: 70px;
-  background-color: var(--sub-color);
-  /* background-color: black; */
+  background-color: var(--text-color);
+  /* background-color: transparent; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 nav i {
-  font-size: 4rem;
-  color: var(--main-color);
+  font-size: 3rem;
+  /* color: var(--main-color); */
+  background: -webkit-linear-gradient(rgb(158, 0, 0), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  margin-left: 20px;
+
+  animation: heartBeat infinite;
+  animation-duration: 0.8s;
+  transition: 0.7s;
 }
 .navbar {
   width: 35%;
-  /* height: 70px; */
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  margin-top: 10px;
 }
 
 .navbar a {
@@ -55,27 +60,24 @@ nav i {
     background-color: #d0d0d0;
 }
 
-img {
+.container .vh-bg-1 {
     position: absolute;
-    z-index: 0;
-    opacity: 40%;
+    z-index: 1;
+    opacity: 50%;
     width: 100%;
     height: 570px;
-
-    object-fit:contain;
+    object-fit: contain;
 }
-
 
 .phno {
     position: relative;
     z-index: 10;
-    top: 80px;
+    top:60px;
 }
 
 .phno .name,
 .phno .phone {
     text-align: center;
-    /* margin-top: ; */
     background: -webkit-linear-gradient(rgb(156, 7, 144), rgb(219, 3, 3));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
