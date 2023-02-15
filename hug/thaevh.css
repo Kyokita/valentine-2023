@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  font-family: "Dancing Script", cursive;
+}
+
+:root {
+  --main-color: rgb(148, 2, 2);
+  --sub-color: #c58177;
+  --text-color: black;
+}
+
+/* navbar */
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: var(--sub-color);
+  /* background-color: black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav i {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+.navbar {
+  width: 35%;
+  /* height: 70px; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.navbar a {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(rgb(255, 2, 2), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-left: 20px;
+}
+.container {
+    width: 100%;
+    height: 570px;
+
+    background-color: #d0d0d0;
+}
+
+img {
+    position: absolute;
+    z-index: 0;
+    opacity: 40%;
+    width: 100%;
+    height: 570px;
+
+    object-fit:contain;
+}
+
+
+.phno {
+    position: relative;
+    z-index: 10;
+    top: 80px;
+}
+
+.phno .name,
+.phno .phone {
+    text-align: center;
+    /* margin-top: ; */
+    background: -webkit-linear-gradient(rgb(156, 7, 144), rgb(219, 3, 3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.phno .name {
+  font-size: 6rem;
+}
+
+.phno .phone {
+  font-size: 3rem;
+}
